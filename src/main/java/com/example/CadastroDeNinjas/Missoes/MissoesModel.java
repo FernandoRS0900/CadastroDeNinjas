@@ -3,9 +3,14 @@ package com.example.CadastroDeNinjas.Missoes;
 
 import com.example.CadastroDeNinjas.Ninjas.NinjaModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
-
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 @Entity
 @Table(name = "tb_missoes")
 public class MissoesModel {
