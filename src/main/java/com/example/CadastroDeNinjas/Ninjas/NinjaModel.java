@@ -1,18 +1,18 @@
 package com.example.CadastroDeNinjas.Ninjas;
-
-
 import com.example.CadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.List;
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
 @Entity
 @Table(name = "tb_cadastro")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString(exclude = "missoes")
 
 public class NinjaModel {
 
