@@ -31,8 +31,8 @@ public class NinjaService {
     }
 
     //deletar o ninja
-    public NinjaModel deletarNinjaPorId(Long id){
-        return ninjaRepository.deleteById();
+    public void deletarNinjaPorId(Long id){
+        ninjaRepository.deleteById(id);
     }
 
 
